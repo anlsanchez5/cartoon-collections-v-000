@@ -18,9 +18,9 @@ end
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  check = []
+  checks = []
   array.each {|item| check << cheese_types.include?(item)}
-  index = check.index("true")
+  index = checks.index("true")
 binding.pry
   array[index]  if index != nil
 
