@@ -24,6 +24,5 @@ def find_the_cheese(array)
     array.each {|item| check << cheese_types.include?(item)}
     array[i] if check[i] == true
     i += 1
-  binding.pry
   end
 end
