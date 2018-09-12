@@ -23,10 +23,9 @@ def find_the_cheese(array)
   while i < array.length
     array.each {|item| check << cheese_types.include?(item)}
     i += 1
-    if check[i] == true
-      array[i]
-    else
-      nil
-    end
   end
+
+  index = check.index("true")
+  array[index]  if index != nil
+    
 end
