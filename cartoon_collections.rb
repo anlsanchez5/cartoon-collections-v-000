@@ -23,7 +23,7 @@ def find_the_cheese(array)
   while i < array.length
     array.each {|item| check << cheese_types.include?(item)}
     array[i] if check[i] == true
-  binding.pry
     i += 1
+  bindng.pry
   end
 end
