@@ -28,5 +28,5 @@ def find_the_cheese(array)
   index = check.index("true")
 binding.pry
   array[index]  if index != nil
-    
+
 end
